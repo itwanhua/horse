@@ -14,7 +14,7 @@ while True:
         # 调用接口获取微信端最近发送的一条消息，接口地址为http://api.itmojun.com/pc/cmd/get，该接口带有一个参数id，表示当前电脑ID
         # 微信端通过这个电脑ID区分不同电脑
         # urlopen函数的返回值为一个文件对象，可以调用其read方法获取接口的返回数据（bytes类型）
-        r = request.urlopen("http://api.itmojun.com/pc/cmd/get?id=liuhui").read()
+        r = request.urlopen("http://api.itmojun.com/pc/cmd/get?id=wan").read()
 
         # 将bytes类型数据转换为str类型
         msg = r.decode("gbk")
